@@ -1,6 +1,11 @@
 new Vue({
     el:'#app',
     data: {
-        toggle:true
+        colors:['Red','Green','Blue'],
+        user: {
+            firstName: 'Taro',
+            lastName: 'Yamada',
+            age: 28
+        }
     }
 })

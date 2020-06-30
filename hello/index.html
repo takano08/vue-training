@@ -6,9 +6,19 @@
     </head>
     <body>
       <div id="app">
-          <p v-show="toggle">
-              Hello
-          </p>
+          <ol>
+              <li v-for="color in colors">{{color}}</li>
+          </ol>
+          <hr>
+          <ul>
+              <li v-for="value in user">{{value}}</li>
+          </ul>
+          <hr>
+          <ul>
+            <li v-for="(value,key) in user">
+                {{key}} : {{value}}
+            </li>
+          </ul>
       </div>
 
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16"></script>
