@@ -1,6 +1,6 @@
 new Vue({
     el:'#app',
     data: {
-        toggle:true
+        message: 'Hello<span style="color:red;">Vue.js!</span>'
     }
 })
