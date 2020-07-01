@@ -1,19 +1,23 @@
 new Vue({
     el:'#app',
-    data: {
-        message: 'Hello World!',
-        url: 'https://jp.vuejs.org/',
-        toggle:true,
-        languages: [
-            'Javascript',
-          'Ruby',
-          'Python'
-        ]
+    data:{
+        newItem: '',
+        todos: []
     },
     methods: {
-        clickHandler:function(){
-            this.message='Clicked!'
+        addItem:function(event){
+           if(this.newItem=='') return;
+            
+           var todo={
+               item: this.newItem,
+               isDone: false
+           };
+           this.todos.push(todo);
+           this.newItem='';
+        },
+        deleteItem: function(index){
+            this.todos.splice(index, 1)
         }
     }
-    
+
 })
