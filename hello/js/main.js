@@ -3,7 +3,12 @@
 new Vue({
     el:'#app',
     data: {
-        url:'https://www.google.co.jp/'
+       message: 'Hello Vue.js!'
+    },
+    computed: {
+        reversedMessage: function(){
+            return this.message.split('').reverse().join('')
+        }
     }
     
 })
