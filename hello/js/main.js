@@ -3,14 +3,22 @@
 new Vue({
     el:'#app',
     data: {
-        firstName: '',
-        lastName: '',
+        colors: [
+            { name: 'RED'},
+            { name: 'Green'},
+            { name: 'Blue'}
+        ]
     },
-    computed: {
-        fullName: function() {
-            return this.firstName + ' ' + this.lastName    
+    watch: {
+        colors: {
+            handler: function(newValue, oldValue){
+                console.log('Update!');
+            },
+            deep: true
+
         }
-        
+    
+    
         
 
     }
