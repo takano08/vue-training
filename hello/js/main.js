@@ -1,10 +1,14 @@
 new Vue({
     el:'#app',
     data: {
-        classObject: {
+        largeClass: {
             large: true,
-            'text-danger' : true
-        }
+            'bg-gray': true
+        },
+        dangerClass: {
+            'text-danger': true
+        },
+        isLarge: true
         
     }
 })
