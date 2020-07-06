@@ -2,16 +2,12 @@
 
 new Vue({
     el:'#app',
-    computed: {
-        computedNumber: function(){
-            console.log('computed!');
-            return Math.random()
-        }
+    data: {
+        message: 'hello Vue.js'
     },
-    methods: {
-        methodsNumber: function(){
-            console.log('methods!');
-            return Math.random()
+    watch: {
+        message: function(newValue, oldVlue) {
+            console.log('new:%s, old:%s',newValue,oldVlue);
         }
     }
     
