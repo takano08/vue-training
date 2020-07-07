@@ -7,8 +7,11 @@
     <body>
       <div id="app">
           <p>
-              {{message}}
+              {{counter}}
           </p>
+          <button v-on:click="counter++">
+            Click!
+          </button>
       </div>
 
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16"></script>
