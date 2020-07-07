@@ -6,13 +6,9 @@
     </head>
     <body>
       <div id="app">
-          <p>
-              {{message}}
-          </p>
-          <input type="text" v-model="message">
-          <pre>
-            {{ $data }}
-          </pre>
+          <pre>{{ message }}</pre>
+          <textarea v-model="message"></textarea>
+          <pre>{{ $data }}</pre>
       </div>
 
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16"></script>
