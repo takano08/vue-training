@@ -1,7 +1,9 @@
 new Vue({
     el:'#app',
     data: {
+      styleObject: { 
         color: 'blue',
-        fontSize: 36
+        fontSize: '36px',
+       } 
     }
 })
