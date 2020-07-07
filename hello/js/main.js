@@ -4,8 +4,8 @@ new Vue({
         message:''
     },
     methods: {
-        clickHandler: function(message) {
-            this.message=message
+        clickHandler: function() {
+            this.message = new Date().toLocaleTimeString()
         }   
     }
 })
