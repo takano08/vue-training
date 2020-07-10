@@ -1,6 +1,8 @@
+Vue.component('hello-component',{
+    template:'<p>Hello</p>'
+})
+
 new Vue({
     el:'#app',
-    data: {
-        message: 'Hello Vue.js!'
-    }
+    
 })
